@@ -12,15 +12,13 @@
   "scripts": {
     "start": "pm2 start ecosystem.config.json --no-daemon",
     "dev": "cross-env NODE_ENV=development nodemon src/index.js",
-    "test": "jest -i --colors --verbose --detectOpenHandles",
-    "test:watch": "jest -i --watchAll",
-    "coverage": "jest -i --coverage",
-    "coverage:coveralls": "jest -i --coverage --coverageReporters=text-lcov | coveralls",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "seed:import": "cross-env NODE_ENV=development node seed/index.js --import",
+    "seed:delete": "cross-env NODE_ENV=development node seed/index.js --delete"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

@@ -44,6 +44,14 @@ const userSchema = mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    leaveBalance: {
+      type: Number,
+      default: 10,
+    },
+    usedLeave: {
+      type: Number,
+      default: 0,
+    },
   },
   {
     timestamps: true,

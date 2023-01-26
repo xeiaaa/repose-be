@@ -1,0 +1,11 @@
+Routes
+
+GET     /leaves
+POST    /leaves
+GET     /leaves/:id
+PUT     /leaves/:id
+DELETE  /leaves/:id
+
+GET     /leaves/:id/approve          ADMIN
+GET     /leaves/:id/decline          ADMIN
+

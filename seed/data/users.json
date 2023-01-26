@@ -1,0 +1,7 @@
+[{
+  "name": "Admin Test",
+  "email": "admin@gmail.com",
+  "password": "Password1!",
+  "role": "admin",
+  "isEmailVerified": true
+}]

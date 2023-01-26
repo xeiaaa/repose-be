@@ -5,6 +5,7 @@ const { userService } = require('../services');
 const queryParser = require('../utils/queryParser');
 
 const createUser = catchAsync(async (req, res) => {
+  req.body.password = 'Password1!';
   const user = await userService.createUser(req.body);
   res.status(httpStatus.CREATED).send(user);
 });
